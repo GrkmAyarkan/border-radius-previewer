@@ -5,6 +5,8 @@ const topRightInput = document.getElementById('top-right');
 const bottomRightInput = document.getElementById('bottom-right');
 const bottomLeftInput = document.getElementById('bottom-left');
 
+const cssOutput = document.getElementById('css-output');
+
 function updateBorderRadius() {
     const topLeft = topLeftInput.value;
     const topRight = topRightInput.value;
@@ -16,9 +18,11 @@ function updateBorderRadius() {
     ${topRight}px
     ${bottomRight}px
     ${bottomLeft}px
-    `;
+    `; // Bu sıra CSS standardıdır.
 
     previewBox.style.borderRadius = borderRadiusValue;
+
+    cssOutput.textContent = `border-radius: ${borderRadiusValue};`;
 }
 
 topLeftInput.addEventListener('input', updateBorderRadius);
