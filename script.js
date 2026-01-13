@@ -7,6 +7,8 @@ const bottomLeftInput = document.getElementById('bottom-left');
 
 const cssOutput = document.getElementById('css-output');
 
+const copyButton = document.getElementById('copy-btn');
+
 function updateBorderRadius() {
     const topLeft = topLeftInput.value;
     const topRight = topRightInput.value;
@@ -31,3 +33,7 @@ bottomRightInput.addEventListener('input', updateBorderRadius);
 bottomLeftInput.addEventListener('input', updateBorderRadius);
 
 updateBorderRadius();
+
+copyButton.addEventListener('click', () => {
+    navigator.clipboard.writeText(cssOutput.textContent);
+});
