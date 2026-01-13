@@ -4,3 +4,26 @@ const topLeftInput = document.getElementById('top-left');
 const topRightInput = document.getElementById('top-right');
 const bottomRightInput = document.getElementById('bottom-right');
 const bottomLeftInput = document.getElementById('bottom-left');
+
+function updateBorderRadius() {
+    const topLeft = topLeftInput.value;
+    const topRight = topRightInput.value;
+    const bottomRight = bottomRightInput.value;
+    const bottomLeft = bottomLeftInput.value;
+
+    const borderRadiusValue = `
+    ${topLeft}px
+    ${topRight}px
+    ${bottomRight}px
+    ${bottomLeft}px
+    `;
+
+    previewBox.style.borderRadius = borderRadiusValue;
+}
+
+topLeftInput.addEventListener('input', updateBorderRadius);
+topRightInput.addEventListener('input', updateBorderRadius);
+bottomRightInput.addEventListener('input', updateBorderRadius);
+bottomLeftInput.addEventListener('input', updateBorderRadius);
+
+updateBorderRadius();
