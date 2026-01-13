@@ -5,6 +5,11 @@ const topRightInput = document.getElementById('top-right');
 const bottomRightInput = document.getElementById('bottom-right');
 const bottomLeftInput = document.getElementById('bottom-left');
 
+const spanTopLeft = document.getElementById('topLeftValue');
+const spanTopRight = document.getElementById('topRightValue');
+const spanBottomRight = document.getElementById('bottomRightValue');
+const spanBottomLeft = document.getElementById('bottomLeftValue');
+
 const cssOutput = document.getElementById('css-output');
 
 const copyButton = document.getElementById('copy-btn');
@@ -23,6 +28,11 @@ function updateBorderRadius() {
     `; // Bu sıra CSS standardıdır.
 
     previewBox.style.borderRadius = borderRadiusValue;
+
+    spanTopLeft.textContent = `${topLeft}px`;
+    spanTopRight.textContent = `${topRight}px`;
+    spanBottomRight.textContent = `${bottomRight}px`;
+    spanBottomLeft.textContent = `${bottomLeft}px`;
 
     cssOutput.textContent = `border-radius: ${borderRadiusValue};`;
 }

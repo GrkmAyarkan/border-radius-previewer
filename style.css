@@ -61,3 +61,6 @@ body {
 #copy-btn:hover { /* hover fare imleci ile üzerine gelindiğinde vereceği tepki */
     background-color: #4338ca;
 }
+.preview {
+  border-radius: 20px;
+}
