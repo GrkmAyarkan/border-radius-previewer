@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a39b9b;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    width: 320px;
+}
+
+#left-radius {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    /* Kaydırıcının aşağıdan yukarıya çalışması için */
+    width: 5px;
+    height: 200px;
+}
+
+#right-radius {
+    writing-mode: vertical-lr;
+    direction: rtl;
+    /* Kaydırıcının aşağıdan yukarıya çalışması için */
+    width: 5px;
+    height: 200px;
+}
+
+.input-slider {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    background: black;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.input-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fd0202;
+    cursor: pointer;
+}
+
+.input-slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+.preview-box {
+    width: 200px;
+    height: 200px;
+    background-color: #4f46e5;
+    border-radius: 50%;
+    /* border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%; */
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    /* Yatayda ortalar */
+    align-items: center;
+}
+
+.controls {
+    justify-content: center;
+    gap: 12px;
+}
+
+.radius {
+    display: flex;
+    justify-content: center;
+    /* Yatayda ortalar */
+    align-items: center;
+}
+
+.output {
+    margin-top: 16px;
+    background-color: #f0f0f0;
+    padding: 12px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+#copy-btn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 8px;
+    background-color: #4f46e5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#copy-btn:hover {
+    /* hover fare imleci ile üzerine gelindiğinde vereceği tepki */
+    background-color: #4338ca;
+}
+
+.switch {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#switch-btn {
+    color: #090909;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    text-decoration: none;
+}
+
+#switch-btn:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+#switch-btn:hover {
+    background-color: #dddbdb;
+}
