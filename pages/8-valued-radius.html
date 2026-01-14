@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="switch">
+            <a id="switch-btn" href="/index.html">Go to 8-valued radius</a>
+        </div>
+        <div class="controls">
+            <div class="radius">
+                <input class="input-slider" type="range" min="0" max="100" value="50" id="top-radius">
+            </div>
+            <div class="middle">
+                <div class="radius">
+                    <input class="input-slider" type="range" min="0" max="100" value="50" id="left-radius">
+                </div>
+                <div class="preview-box"></div>
+                <div class="radius">
+                    <input class="input-slider" type="range" min="0" max="100" value="50" id="right-radius">
+                </div>
+            </div>
+            <div class="radius">
+                <input class="input-slider" type="range" min="0" max="100" value="50" id="bottom-radius">
+            </div>
+            <div class="output">
+                <code id="css-output">
+                    border-radius: 50px 50px 50px 50px;
+                </code>
+                <button id="copy-btn">Copy CSS</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

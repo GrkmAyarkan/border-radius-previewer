@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
@@ -11,35 +12,43 @@ body {
     align-items: center;
     background-color: #a39b9b;
 }
+
 .container {
     background-color: #ffffff;
     padding: 24px;
     border-radius: 8px;
     width: 320px;
 }
+
 .preview-box {
     width: 200px;
     height: 200px;
     background-color: #4f46e5;
-    border-radius: 20px;
+    border-radius: 50px;
+    /* border-radius: 100% 0% 0% 100% / 0% 100% 0% 100%; */
     margin: 0 auto 24px;
 }
+
 .controls {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
+
 .control {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .control label {
     font-size: 14px;
 }
+
 .control input {
     width: 140px;
 }
+
 .output {
     margin-top: 16px;
     background-color: #f0f0f0;
@@ -48,6 +57,7 @@ body {
     font-family: monospace;
     font-size: 13px;
 }
+
 #copy-btn {
     margin-top: 12px;
     width: 100%;
@@ -58,6 +68,38 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
-#copy-btn:hover { /* hover fare imleci ile üzerine gelindiğinde vereceği tepki */
+
+#copy-btn:hover {
+    /* hover fare imleci ile üzerine gelindiğinde vereceği tepki */
     background-color: #4338ca;
+}
+
+.switch {
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+#switch-btn {
+    color: #090909;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+    text-decoration: none;
+}
+
+#switch-btn:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+#switch-btn:hover {
+    background-color: #dddbdb;
 }
