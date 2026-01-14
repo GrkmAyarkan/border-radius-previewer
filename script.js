@@ -24,8 +24,7 @@ function updateBorderRadius() {
     ${topLeft}px
     ${topRight}px
     ${bottomRight}px
-    ${bottomLeft}px
-    `; // Bu sıra CSS standardıdır.
+    ${bottomLeft}px`; // Bu sıra CSS standardıdır.
 
     previewBox.style.borderRadius = borderRadiusValue;
 
