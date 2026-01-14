@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,3 +147,64 @@ body {
 #switch-btn:hover {
     background-color: #dddbdb;
 }
+
+/* ************************** 
+
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(1) {
+  width: 650px;
+  height: 650px;
+  border-radius: 
+    74% 26% 29% 71% /
+    44% 50% 50% 56%;
+
+  transform-origin: -220px center;
+  animation: orbit 26s linear infinite;
+}
+
+.background span:nth-child(2) {
+  width: 460px;
+  height: 460px;
+  border-radius: 
+    89% 11% 14% 86% /
+    74% 80% 20% 26%;
+
+  transform-origin: 310px center;
+  animation: orbit 40s linear infinite;
+}
+
+.background span:nth-child(3) {
+  width: 300px;
+  height: 300px;
+  border-radius: 
+    35% 65% 22% 78% /
+    74% 30% 70% 26%;
+
+  transform-origin: -160px center;
+  animation: orbit 22s linear infinite reverse;
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
