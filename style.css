@@ -23,7 +23,6 @@ body {
 .preview-box {
     width: 200px;
     height: 200px;
-    background-color: #F28705;
     background: linear-gradient(135deg, #61638C, #3FA689, #F2C84B);
     border-radius: 50px;
     margin: 0 auto 24px;
