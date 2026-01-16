@@ -30,9 +30,7 @@ This project allows users to visually adjust the border-radius of a box and inst
 
 ---
 
-#TR
-
-# Border Radius Previewer
+# Border Radius Previewer / TR
 
 CSS `border-radius` değerlerini görsel olarak önizlemek ve üretmek için geliştirilmiş basit ve etkileşimli bir araçtır.
 
